@@ -15,6 +15,10 @@
           devShell = pkgs.mkShell {
             buildInputs = [
               pkgs.zig
+              pkgs.pkg-config
+              pkgs.wayland
+              pkgs.wayland-scanner
+              pkgs.wayland-protocols
             ];
           };
         }
